@@ -28,13 +28,17 @@ def polynom_gen(k):
             if coefficient > 0:
                 if first:
                     simbol = ''
-                else:
+                elif i == 0:
                     simbol = ' + 1'
+                else :
+                    simbol = ' + '
             else:
                 if first:
                     simbol = '-'
-                else:
+                elif i == 0:
                     simbol = ' - 1'
+                else :
+                    simbol = ' - '
         else:
             if first:
                 simbol = str(coefficient)
