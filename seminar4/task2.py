@@ -2,6 +2,8 @@
 def is_prime(number):
     if number < 2:
         return False
+    if number == 2:
+        return True
     if not number % 2:
         return False
     for i in range(3, int(number ** 0.5 + 1),2):
@@ -11,7 +13,7 @@ def is_prime(number):
 
 n = int(input('Введите целое число: '))
 divisors_list = []
-for i in range(2,  int(n ** 0.5 + 1)) :
+for i in range(1,  int(n ** 0.5 + 1)) :
     if n % i == 0: 
         if is_prime(i):
             divisors_list.append(i)
