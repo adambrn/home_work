@@ -69,6 +69,7 @@ if game_mode == 3:
         print(f'Осталось {all_candys} конфет')
         if lot == 2:
             comp_take = all_candys % (max_take + 1)
+            if comp_take == 0: comp_take = 1
             if all_candys <= max_take:
                 comp_take = all_candys    
             print(f'Компьтер взял {comp_take} конфет')
