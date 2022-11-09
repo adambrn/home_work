@@ -25,8 +25,8 @@ print('1 - 2 игрока')
 print('2 - игра с компьютером')
 print('3 - игра с умным компьютером')
 game_mode = int(input('Выберите режим: '))
-all_candys = 16
-max_take = 5
+all_candys = 56
+max_take = 12
 if game_mode == 1:
     lot = random.randint(1,2)
     
